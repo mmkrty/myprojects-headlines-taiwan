@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Headlines</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>
+            每日焦點
+        </h1>
+    </header>
+
+    <main class="container">
+
+        <div class="un news-container">
+            <h3 class="news-agency">聯合報</h3>
+            <div class="news-headlines__container" id="un">
+                <% un.forEach(element=> { %>
+
+                    <a href="<%=element.links%>" target="_blank">
+                        <%=element.title%>
+                    </a>
+
+                    <% }); %>
+
+            </div>
+        </div>
+
+        <div class="lt news-container">
+            <h3 class="news-agency">自由時報</h3>
+            <div class="news-headlines__container" id="lt">
+                <% lt.forEach(element=> { %>
+
+                    <a href="<%=element.links%>" target="_blank">
+                        <%=element.title%>
+                    </a>
+
+                    <% }); %>
+
+            </div>
+        </div>
+
+        <div class="chd news-container">
+            <h3 class="news-agency">中國時報</h3>
+            <div class="news-headlines__container" id="chd">
+                <% chd.forEach(element=> { %>
+
+                    <a href="<%=element.links%>" target="_blank">
+                        <%=element.title%>
+                    </a>
+
+                    <% }); %>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
