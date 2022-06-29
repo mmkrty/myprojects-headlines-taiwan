@@ -10,10 +10,19 @@ html {
   font-size: 62.5%;
 }
 
+.background {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("/img/newspaper.png");
+}
+
 h1 {
   text-align: center;
   font-size: 4.5rem;
-  margin: 2rem 0;
+  padding: 3rem 0;
 }
 
 .container {
